@@ -1,0 +1,240 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+/* .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: blue;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  grid-gap: 0.25%;
+} */
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* grid-template-rows: repeat(6, 1fr)); */
+    background-color: blue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25%;
+    grid-template-areas:
+    "a a b c d d d d e e"
+    "a a f g d d d d e e"
+    "h h i i d d d d j k"
+    "h h i i d d d d l m"
+    "n o p p q q q q r r"
+    "s t p p q q q q r r";
+}
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    background-color: blue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25%;
+} */
+.a {
+  grid-area: a;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.b {
+  grid-area: b;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.c {
+  grid-area: c;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.d {
+  grid-area: d;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.e {
+  grid-area: e;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.f {
+  grid-area: f;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.g {
+  grid-area: g;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.h {
+  grid-area: h;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.i {
+  grid-area: i;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.j {
+  grid-area: j;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.k {
+  grid-area: k;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.l {
+  grid-area: l;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.m {
+  grid-area: m;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.n {
+  grid-area: n;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.o {
+  grid-area: o;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.p {
+  grid-area: p;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.q {
+  grid-area: q;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.r {
+  grid-area: r;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.s {
+  grid-area: s;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.t {
+  grid-area: t;
+  display: flex;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* .square {
+    display: flex;
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+/* .square {
+  height: 10%;
+  width: 10%;
+  align-content: stretch;
+  position: relative;
+  background-color: blue;
+} */
+/* #color {
+  background-color: blue;
+} */
