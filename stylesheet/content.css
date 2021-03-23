@@ -23,13 +23,24 @@ html, body {
     padding: 0;
     grid-gap: 0.25%;
     grid-template-areas:
-    "a a b c d d d d e e"
+    "a a b b d d d d e e"
     "a a f g d d d d e e"
     "h h i i d d d d j k"
     "h h i i d d d d l m"
     "n o p p q q q q r r"
     "s t p p q q q q r r";
 }
+.img {
+  /* object-fit: cover; */
+  object-position: center;
+  /* width: 90%;
+  height: 90%; */
+}
+/* .grid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 /* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr);
@@ -220,6 +231,38 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.color-panel{
+	position: absolute;
+    top: 0px;
+    right: 30px;
+    background-color: #fff;
+    height: 60px;
+    padding: 15px 5px 5px 5px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    border-radius: 0px 0px 30px 30px;
+}
+.color-panel div {
+	height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	float:left;
+	margin: 5px;
+}
+#blue{
+    background-color: #b3e5fc;
+}
+#red{
+    background-color: #ffcdd2;
+}
+#yellow{
+    background-color: #F6C743;
+}
+#green{
+    background-color: #c5e1a5;
+}
+
 /* .square {
     display: flex;
     background-color: grey;
