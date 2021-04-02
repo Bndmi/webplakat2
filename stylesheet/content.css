@@ -3,6 +3,24 @@ html, body {
   height: 100%;
   margin: 0; padding: 0;
 }
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: white;
+  line-height: 26.82px;
+  top: 10px;
+  padding-left: 10px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: white;
+  line-height: 18.29px;
+  top: 10px;
+  padding-left: 10px;
+}
 /* .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -14,27 +32,62 @@ html, body {
   grid-gap: 0.25%;
 } */
 .grid {
-    display: grid;
-    /* grid-template-columns: repeat(10, 1fr); */
-    /* grid-template-rows: repeat(6, 1fr)); */
-    background-color: blue;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    grid-gap: 0.25%;
-    grid-template-areas:
-    "a a b b d d d d e e"
-    "a a f g d d d d e e"
-    "h h i i d d d d j k"
-    "h h i i d d d d l m"
-    "n o p p q q q q r r"
-    "s t p p q q q q r r";
+  display: grid;
+  /* grid-template-columns: repeat(10, 1fr); */
+  /* grid-template-rows: repeat(6, 1fr)); */
+  background-color: blue;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* grid-gap: 0.25%; */
+  grid-template-areas:
+  "a a b b d d d d e e"
+  "a a f g d d d d e e"
+  "h h i i d d d d j k"
+  "h h i i d d d d l m"
+  "n o p p q q q q r r"
+  "s t p p q q q q r r";
 }
 .img {
   /* object-fit: cover; */
-  object-position: center;
-  /* width: 90%;
-  height: 90%; */
+  object-position: relative;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+#layer1{
+    position: flex;
+}
+#layer2 {
+    position: flex;
+}
+#layer1 {
+    z-index: 50;
+}
+#layer2 {
+    z-index: 55;
+}
+.grey {
+  /* width: 197.63px;
+  height: 296.44px; */
+  position: absolute;
+  /* background: url('элементы/Обложка карты.svg');
+  background-size: auto 100% ;
+  background-repeat: no-repeat;
+  transition: all 4s;
+  transition-delay: 1s; */
+  position: relative;
+  z-index: 20;
+}
+.color {
+  /* width: 197.63px;
+  height: 296.44px; */
+  z-index: 1;
+  position: relative;
+  opacity: 0;
+}
+.container {
+  
 }
 /* .grid > div > img {
     width: 100%;
@@ -54,8 +107,9 @@ html, body {
 .a {
   grid-area: a;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #CBCBCB;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -63,26 +117,29 @@ html, body {
 .b {
   grid-area: b;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #807877;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
 }
-.c {
+/* .c {
   grid-area: c;
   display: flex;
+  flex-wrap: wrap;
   background-color: grey;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 .d {
   grid-area: d;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #737170;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -90,8 +147,9 @@ html, body {
 .e {
   grid-area: e;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #CBCBCB;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -99,8 +157,9 @@ html, body {
 .f {
   grid-area: f;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #4B4241;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -108,8 +167,9 @@ html, body {
 .g {
   grid-area: g;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #292322;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -117,8 +177,9 @@ html, body {
 .h {
   grid-area: h;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #807877;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -126,8 +187,9 @@ html, body {
 .i {
   grid-area: i;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #CBCBCB;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -135,8 +197,9 @@ html, body {
 .j {
   grid-area: j;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #292322;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -144,8 +207,9 @@ html, body {
 .k {
   grid-area: k;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #4B4241;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -153,8 +217,9 @@ html, body {
 .l {
   grid-area: l;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #4B4241;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -162,8 +227,9 @@ html, body {
 .m {
   grid-area: m;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #807877;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -171,8 +237,9 @@ html, body {
 .n {
   grid-area: n;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #292322;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -180,8 +247,9 @@ html, body {
 .o {
   grid-area: o;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #4B4241;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -189,8 +257,9 @@ html, body {
 .p {
   grid-area: p;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #737170;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -198,8 +267,9 @@ html, body {
 .q {
   grid-area: q;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #292322;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -207,8 +277,9 @@ html, body {
 .r {
   grid-area: r;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #CBCBCB;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -216,8 +287,9 @@ html, body {
 .s {
   grid-area: s;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #4B4241;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -225,42 +297,12 @@ html, body {
 .t {
   grid-area: t;
   display: flex;
-  background-color: grey;
-  height: 100%;
+  flex-wrap: wrap;
+  background-color: #292322;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
-}
-.color-panel{
-	position: absolute;
-    top: 0px;
-    right: 30px;
-    background-color: #fff;
-    height: 60px;
-    padding: 15px 5px 5px 5px;
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
-    border-radius: 0px 0px 30px 30px;
-}
-.color-panel div {
-	height: 50px;
-	width: 50px;
-	border-radius: 30px;
-	float:left;
-	margin: 5px;
-}
-#blue{
-    background-color: #b3e5fc;
-}
-#red{
-    background-color: #ffcdd2;
-}
-#yellow{
-    background-color: #F6C743;
-}
-#green{
-    background-color: #c5e1a5;
 }
 
 /* .square {
