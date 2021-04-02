@@ -1,0 +1,74 @@
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  /* MacBook Pro 2020 15"*/
+  /* MacBook Pro 2020*/
+  .grid {
+      grid-template-areas:
+        "a a b b d d d d e e"
+        "a a f g d d d d e e"
+        "h h i i d d d d j k"
+        "h h i i d d d d l m"
+        "n o p p q q q q r r"
+        "s t p p q q q q r r";
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1400px) {
+  /* Macbook Air 11.6" */
+  /* iPad landscape */
+  .grid {
+      grid-template-areas:
+        "a a b b d d d d"
+        "a a f g d d d d"
+        "h h i i d d d d"
+        "h h i i d d d d"
+        "n o p p q q q q"
+        "s t p p q q q q"
+        "r r r r j k e e"
+        "r r r r l m e e";
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* iPad Portrait */
+  .grid {
+      grid-template-areas:
+        "a a b b"
+        "a a f g"
+        "n o d d"
+        "s t d d"
+        "j k q q"
+        "p p r r"
+        "p p r r"
+        "e e l m"
+        "e e h i";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* iPhone */
+  .grid {
+      grid-template-areas:
+        "a a"
+        "a a"
+        "b b"
+        "f g"
+        "i i"
+        "i i"
+        "h h"
+        "h h"
+        "n o"
+        "s t"
+        "e e"
+        "e e"
+        "d d"
+        "d d"
+        "q q"
+        "j k"
+        "l m"
+        "r r"
+        "r r"
+        "p p"
+        "p p";
+  }
+}
