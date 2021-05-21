@@ -86,8 +86,12 @@ p {
   position: relative;
   opacity: 0;
 }
+.ani:hover {
+  animation: ten 4s infinite linear;
+  transform-origin: 50% 8em;
+}
 .container {
-  
+
 }
 /* .grid > div > img {
     width: 100%;
